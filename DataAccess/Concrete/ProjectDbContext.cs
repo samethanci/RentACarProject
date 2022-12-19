@@ -10,10 +10,13 @@ namespace DataAccess.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"(localdb)\mssqllocaldb;Database=ReCapProjectDB;trusted_connection=true");
+            //optionsBuilder.UseSqlServer(@"(localdb)\mssqllocaldb;Database=ReCapProjectDB;trusted_connection=true");
+            optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDb;Database=ReCapProjectDB;Trusted_Connection=True;MultipleActiveResultSets=True");
         }
-        public DbSet<Car> Tbl_Cars;
-        public DbSet<Color> Tbl_Color;
-        public DbSet<Brand> Tbl_Brand;
+
+        public DbSet<Car> Tbl_Cars { get; set; }
+
+        public DbSet<Color> Tbl_Color { get; set; }
+        public DbSet<Brand> Tbl_Brand { get; set; }
     }
 }
