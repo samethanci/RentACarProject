@@ -24,7 +24,7 @@ namespace Business.Concrete
             }
             else
             {
-                Console.WriteLine("Araba adını ve günlük fiyatını kontrol ediniz.");
+                Console.WriteLine("Araba açıklamasını ve günlük kiralama fiyatını kontrol ediniz.");
             }
         }
 
