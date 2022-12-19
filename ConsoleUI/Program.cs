@@ -10,8 +10,8 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             CarManager carManager = new CarManager(new EfCarDal());
-            carManager.Add(new Car { ColorId = 2, DailyPrice = 1591.05M, Description = "Mercedes C Serisi", ModelYear = "2019" });
-            carManager.Add(new Car { ColorId = 3, DailyPrice = 1647.8M, Description = "Volvo XC40", ModelYear = "2020" });
+            carManager.Add(new Car { ColorId = 1, DailyPrice = 1591.05M, Description = "Mercedes G kasa", ModelYear = "2021" });
+            carManager.Add(new Car { ColorId = 4, DailyPrice = 1647.8M, Description = "Volvo XC90", ModelYear = "2022" });
             foreach (var car in carManager.GetAll())
             {
                 Console.WriteLine(car);
